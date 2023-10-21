@@ -9,7 +9,17 @@
 <body>
     <h1>Login</h1>
     Username: <input type="text"id="user"size="24"></input><br><br>
-    Password: <input type="password"id="pass"></input><input type="button"value=">"id="login"></input><br><br>
+    Password: <input type="password"id="pass"></input><br><br>
+    <input type="button"value="Login"id="login"></input><br><br>
     <a href="../create-account">Create Account</a><br><br>
+    <script>
+        document.getElementById('login').addEventListener('click', function() {
+            if(document.getElementById('user').value=="admin"&&document.getElementById('pass').value=="password"){
+                window.location.replace("https://www.youtube.com/watch?v=o-YBDTqX_ZU");
+            }else{
+                window.alert("WIP");
+            }
+        });
+    </script>
 </body>
 </html>
