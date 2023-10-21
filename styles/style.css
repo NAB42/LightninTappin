@@ -48,3 +48,12 @@ h2{
 #user,#pass{
     border:2px solid black;
 }
+.link:visited{
+    color:blue;
+}
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
