@@ -59,5 +59,13 @@ h2{
     text-decoration: underline;
 }
 table, th, td {
-    border: 1px solid;
+    border: 2px solid;
+    border-collapse: collapse;
+    padding:15px;
   }
+th{
+    background-color:#fff200;
+}
+td{
+    background-color: #FFFFFF;
+}
