@@ -18,19 +18,22 @@ body{
 }
 nav{
     display:grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
 nav a{
     font-size:24px;
-    grid-column: 7;
+    grid-column: 11;
     grid-row:1;
 }
 nav h1{
-    grid-column: 2/5;
+    grid-column: 4/8;
     font-size: 32px;
     text-align: center;
 }
 p{
     margin: 0px 50px;
+}
+h2{
+    text-align: center;
 }
