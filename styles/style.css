@@ -30,11 +30,17 @@ p{
 h2{
     text-align: center;
 }
-#login{
+#login, .button{
     background-color:#fff200;
     font-family:Arial;
     font-size:16px;
     border:2px solid black;
     padding:5px;
     border-radius:5px;
+}
+#login:hover{
+    background-color: #00ffea;
+}
+#user,#pass{
+    border:2px solid black;
 }
