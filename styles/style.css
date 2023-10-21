@@ -16,24 +16,25 @@ body{
 .play:hover{
     background-color: #00ffea;
 }
-nav{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-}
-nav a{
-    font-size:24px;
-    grid-column: 11;
-    grid-row:1;
-}
-nav h1{
-    grid-column: 4/8;
-    font-size: 32px;
+.header{
     text-align: center;
+}
+.header .log{
+    position:absolute;
+    top: 0;
+    right:0;
 }
 p{
     margin: 0px 50px;
 }
 h2{
     text-align: center;
+}
+#login{
+    background-color:#fff200;
+    font-family:Arial;
+    font-size:16px;
+    border:2px solid black;
+    padding:5px;
+    border-radius:5px;
 }

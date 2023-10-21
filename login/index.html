@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Login | LightninTappin</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
     Username: <input type="text"id="user"size="24"></input><br><br>
     Password: <input type="password"id="pass"></input><br><br>
     <input type="button"value="Login"id="login"></input><br><br>
-    <a href="../create-account">Create Account</a><br><br>
+    <a href="../create-account">Don't have an account?</a><br><br>
     <script>
         document.getElementById('login').addEventListener('click', function() {
             if(document.getElementById('user').value=="admin"&&document.getElementById('pass').value=="password"){
