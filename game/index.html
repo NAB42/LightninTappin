@@ -4,7 +4,20 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<title>Morse - Code</title>
-		<script src="coi-serviceworker.js"></script>
+		<meta Cross-Origin-Opener-Policy: same-origin
+		Cross-Origin-Embedder-Policy: require-corp>
+		<script>
+			const myWorker = new Worker("worker.js");
+
+			if (crossOriginIsolated) {
+			const buffer = new SharedArrayBuffer(16);
+			myWorker.postMessage(buffer);
+			} else {
+			const buffer = new ArrayBuffer(16);
+			myWorker.postMessage(buffer);
+			}
+
+		</script>		
 		<style>
 body {
 	touch-action: none;
@@ -244,7 +257,6 @@ const engine = new Engine(GODOT_CONFIG);
 	}
 }());
 		</script>
-		<iframe frameborder="0" src="https://itch.io/embed-upload/8933936?color=333333" allowfullscreen="" width="640" height="380"><a href="https://pilot-ransan.itch.io/testing">Play Testing on itch.io</a></iframe>
 	</body>
 </html>
 
